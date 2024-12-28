@@ -1,10 +1,11 @@
 import { Coffee } from 'lucide-react';
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 
 export const Hero = () => {
     const [isHovered, setIsHovered] = useState(false);
+    console.log(isHovered)
 
     const navigate = useNavigate();
 
