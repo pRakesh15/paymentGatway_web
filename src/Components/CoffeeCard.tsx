@@ -55,7 +55,7 @@ export const CoffeeCard: React.FC<Coffee> = ({ name, description, price, image }
         description: "Buy me a coffee for my good health",
         image: "https://avatars.githubusercontent.com/u/142331648?v=4",
         order_id: data.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-        callback_url: "http://localhost:4000/api/v1/payment-getways/paymentVerification",
+        callback_url: `${server}/payment-getways/paymentVerification`,
         prefill: {
             "name": "Gaurav Kumar",
             "email": "gaurav.kumar@example.com",
